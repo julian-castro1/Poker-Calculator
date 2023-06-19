@@ -17,7 +17,7 @@ body{
     gap: 1em;
     width: 80%;
 }
-span{
+.button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,4 +35,111 @@ span{
     border-radius: .8em;
 
     font-size: x-large;
+}
+#join_title, #host_title{
+    padding-top: .7em;
+    padding-bottom: .7em;
+    border-radius: .8em;
+    width: 100%;
+    background-color: #78AF6F;
+    filter: drop-shadow(0px 1px 4px #454545);
+}
+#host_title{
+    background-color: #DEDEDE;
+    grid-column: 1/-1;
+}
+#join_button{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+#host_button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .4em;
+}
+.input{
+    height: 4em;
+    width: 93%;
+    border: 0;
+    border-radius: .8em;
+    background-color: #C6C6C6;
+    text-align: center;
+    font-weight: 700;
+}
+.input::placeholder {
+    font-weight: 200;
+    font-size: larger;
+}
+.select_chip_text,
+.buy_in_input,
+.buy_in_text,
+.name_field_in {
+    font-size: large;
+    font-weight: 500;
+}
+.chip_option {
+    position: relative;
+}
+.chip_img {
+    width: 4em;
+}
+.val_select {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131;
+    padding: .3em;
+    padding-right: .8em;
+    padding-left: .8em;
+    border: 2px solid #DEDEDE;
+    border-radius: .8em;
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: 500;
+    width: 5em;
+}
+.buy_in_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6em;
+    gap: .6em;
+}
+#buy_in_input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    flex: 2;
+    height: 2em;
+}
+#buy_in_input::placeholder{
+font-weight: 600;
+    font-size: x-large;
+}
+#buy_in_text{
+    flex: 1.5;
+}
+/* #val_disp_in{
+    border: 0;
+    background-color: #313131;
+    color: #FFFFFF;
+    width: 3em;
+    font-weight: 700;
+    font-size: large;
+} */
+
+#name_field_in {
+    height: 3em;
+    margin-bottom: .8em;
+}
+
+#name_field_div{
+    padding: 0;
+    margin: 0;
 }
